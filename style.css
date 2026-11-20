@@ -1064,3 +1064,20 @@ font-weight: 500;
     }
 
 }
+/* Fix Mobile Activity Images */
+
+@media (max-width: 768px) {
+
+    .activity-image {
+        height: auto !important;
+        overflow: visible;
+    }
+
+    .activity-image img {
+        width: 100%;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block;
+    }
+
+}
