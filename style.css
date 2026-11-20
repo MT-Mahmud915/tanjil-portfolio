@@ -872,3 +872,195 @@ font-weight: 500;
     margin-right: 8px;
     width: 18px;
 }
+
+
+/* =========================
+   Main Responsive Layout
+========================= */
+
+@media (max-width: 900px) {
+
+    .main-container {
+        grid-template-columns: 280px 1fr;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .sidebar {
+        padding: 25px;
+        height: auto;
+    }
+
+    .main-content {
+        padding: 25px;
+    }
+
+}
+
+/* =========================
+   Tablet & Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Navigation */
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #navigation {
+        padding: 15px 5px;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    /* Profile */
+    .profile img {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* Section headings */
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    /* Skills */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* Education */
+    .education-item {
+        padding: 20px;
+    }
+
+    /* Portfolio */
+    .portfolio-item {
+        flex-direction: column;
+    }
+
+    /* Volunteering */
+    .volunteering-item {
+        width: 100%;
+    }
+
+    .activity-image {
+        height: auto;
+    }
+
+    .activity-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+}
+
+/* =========================
+   Small Mobile Devices
+========================= */
+
+@media (max-width: 480px) {
+
+    .main-container {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .sidebar,
+    .main-content {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .profile h2 {
+        font-size: 1.3rem;
+    }
+
+    .profile p {
+        font-size: 0.8rem;
+    }
+
+    .heading {
+        font-size: 1.4rem;
+    }
+
+    .content {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    /* Navigation */
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+    }
+
+    /* Skills */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .item {
+        padding: 15px 10px;
+    }
+
+    .item h3 {
+        font-size: 0.85rem;
+    }
+
+    /* Contact */
+    .contact-container {
+        padding: 18px;
+    }
+
+    /* Project cards */
+    .portfolio-item {
+        padding: 15px;
+    }
+
+    /* Volunteering */
+    .activity-content {
+        padding: 15px;
+    }
+
+    .activity-description {
+        text-align: left;
+    }
+
+    /* Footer */
+    .footer-content {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+}
